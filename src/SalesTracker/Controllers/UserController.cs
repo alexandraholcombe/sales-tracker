@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using SalesTracker.Models;
+using SalesTracker.ViewModels;
 
 namespace SalesTracker.Controllers
 {
@@ -24,6 +25,26 @@ namespace SalesTracker.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult NewUser()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> NewUser (NewUserViewModel model)
+        {
+            var user = new User { UserName = model.UserName };
+            IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }
