@@ -19,7 +19,5 @@ namespace SalesTracker.Controllers
                 return RedirectToAction("Login", "User");
             }
         }
-        
-
     }
 }
