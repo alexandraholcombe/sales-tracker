@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\bin\Debug\netcoreapp1.0\SalesTracker.dll
+--temp-output:c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\obj\Debug\netcoreapp1.0\
+--out:c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\bin\Debug\netcoreapp1.0\SalesTracker.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -209,12 +209,13 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlDocument\4.0.1\ref\netstandard1.3\System.Xml.XmlDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\obj\Debug\netcoreapp1.0\SalesTrackerdotnet-compile.deps.json",SalesTracker.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\20170503172416_Initial.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\20170503172416_Initial.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\SalesTrackerContextModelSnapshot.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Models\SalesTrackerContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Models\User.cs
+--resource:"c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\obj\Debug\netcoreapp1.0\SalesTrackerdotnet-compile.deps.json",SalesTracker.deps.json
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Program.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Startup.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Controllers\HomeController.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Controllers\UserController.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\20170503172416_Initial.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\20170503172416_Initial.Designer.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\SalesTrackerContextModelSnapshot.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Models\SalesTrackerContext.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\SalesTracker\src\SalesTracker\Models\User.cs
