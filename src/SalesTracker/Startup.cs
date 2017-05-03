@@ -15,13 +15,22 @@ namespace SalesTracker
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //1
+            services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app)
         {
+            //2
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+
             app.Run(async (context) =>
             {
-                //Right here!
                 await context.Response.WriteAsync("Hello World!");
             });
         }
