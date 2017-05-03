@@ -13,6 +13,8 @@ namespace SalesTracker.Models
         {
         }
 
+        public DbSet<Item> Items { get; set; }
+
         public SalesTrackerContext(DbContextOptions options) : base(options)
         {
         }

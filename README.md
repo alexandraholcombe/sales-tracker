@@ -11,17 +11,14 @@ Webpage built with .NET Core using Entity Framework migrations, SQL Server, and 
   * Identity Authorization Framework
 
 ### **2.  Specs**
-  * Create a Sales Associate
-  * View a Sales Associate
-  * Edit a Sales Associate
-  * Delete a Sales Associate
-  *
+  * Create CRUD for each of the Models
+  
 
 ### **3.  Integration**
 
  **Models**
-  * user (username, password, totalCommission)
-  * item (id, name, description, price, quantity, cost)
+  * user (username, password, totalCommission, list<transaction>)
+  * item (id, name, price, quantity, cost)
   * transaction (id, user, list<item>, value, list<comment>)
   * comment (id, user, description)
   * totalSales (dollar value)
