@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using SalesTracker.ViewModels
+
+@model NewUserViewModel
+
+<h2>Add a new user</h2>
+
+<hr />
+@using (Html.BeginForm("NewUser", "User", FormMethod.Post))
+{
+    @Html.Label("Username: ")
+    @Html.TextBoxFor(m => m.UserName)
+
+    @Html.Label("Password: ")
+    @Html.TextBoxFor(m => m.Password)
+
+    @Html.LabelFor(m => m.ConfirmPassword)
+    @Html.TextBoxFor(m => m.ConfirmPassword)
+
+    <input type="submit" value="Register"/>
+}
