@@ -4,3 +4,7 @@
 #content-container {
     border: 2px solid red;
 }
+
+.login-page {
+    text-align: center;
+}

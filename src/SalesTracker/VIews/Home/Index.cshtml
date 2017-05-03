@@ -1,21 +1,6 @@
-﻿@{ 
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $.ajax({
-            type: 'GET',
-            dataType: 'html',
-            url: '@Url.Action("Login", "User")',
-            success: function (result) {
-                $('#content-container').html(result);
-            }
-        });
-    });
-</script>
-
-<div id="content-container">
-    Hello
-</div>
+HELLO

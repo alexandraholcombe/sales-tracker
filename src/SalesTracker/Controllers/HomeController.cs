@@ -10,11 +10,16 @@ namespace SalesTracker.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "User");
+            }
         }
-        public IActionResult Login()
-        {
-            return View();
-        }
+        
+
     }
 }

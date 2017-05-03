@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Log In";
+    ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -7,17 +7,23 @@
 
 @model LoginViewModel
 
-<h2>Log in with your account</h2>
+<div class="login-page">
+    <h2>Log in with your account</h2>
 
-<hr />
+    <hr />
 
-@using (Html.BeginForm())
-{
-    @Html.Label("Username: ")
-    @Html.TextBoxFor(m => m.UserName)
+    @using (Html.BeginForm(new { id = "login-form" }))
+    {
+        <div class="form-group">
+            @Html.Label("Username: ")
+            @Html.TextBoxFor(m => m.UserName)
+        </div>
 
-    @Html.Label("Password: ")
-    @Html.PasswordFor(m => m.Password)
+        <div class="form-group">
+            @Html.Label("Password: ")
+            @Html.PasswordFor(m => m.Password)
+        </div>
 
-    <input type="submit" value="Log in" class="btn btn-default" />
-}
+        <input type="submit" value="Log in" class="btn btn-default" />
+    }
+</div>
