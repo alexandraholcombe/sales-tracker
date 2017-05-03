@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SalesTracker.Models
 {
-    public class AppContext : IdentityDbContext<User>
+    public class SalesTrackerContext : IdentityDbContext<User>
     {
-        public AppContext()
+        public SalesTrackerContext()
         {
         }
 
-        public AppContext(DbContextOptions options) : base(options)
+        public SalesTrackerContext(DbContextOptions options) : base(options)
         {
         }
 
