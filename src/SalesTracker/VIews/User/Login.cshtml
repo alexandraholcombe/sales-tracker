@@ -1,0 +1,23 @@
+﻿@{ 
+    ViewData["Title"] = "Log In";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using SalesTracker.ViewModels
+
+@model LoginViewModel
+
+<h2>Log in with your account</h2>
+
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Username: ")
+    @Html.TextBoxFor(m => m.UserName)
+
+    @Html.Label("Password: ")
+    @Html.PasswordFor(m => m.Password)
+
+    <input type="submit" value="Log in" class="btn btn-default" />
+}
